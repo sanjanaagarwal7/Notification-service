@@ -78,7 +78,8 @@ Failed notifications will be automatically retried. When a failure occurs, the m
 2. RabbitMQ is accessible at amqp://guest:guest@localhost:5672/.<br>
 
 3. Notification sending (Email, SMS) logic can be implemented or mocked inside the worker.<br><br>
-
+## Here is the link to my API Documentation
+ https://documenter.getpostman.com/view/44592909/2sB2qXji4M   <br><br><br><br>
 
 
 
