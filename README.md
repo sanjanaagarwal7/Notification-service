@@ -106,8 +106,8 @@ Content-Type: application/json
 
 
 <br>
-![Screenshot 2025-05-19 025354](https://github.com/user-attachments/assets/9c51c010-ccb3-46b9-94b5-6c4f3c0da96e)<br>
-![Screenshot 2025-05-19 025433](https://github.com/user-attachments/assets/af1c61a3-395f-4ebe-ad74-70dcaaeccfc0)<br>
-![Screenshot 2025-05-19 025458](https://github.com/user-attachments/assets/50d5213a-b5ac-4239-9fb4-69c818304182)
+<h2>Screenshots</h2>
+![Screenshot 2025-05-19 025354](https://github.com/user-attachments/assets/2b343198-8a27-4398-8051-e59132191145)
+
 
 
