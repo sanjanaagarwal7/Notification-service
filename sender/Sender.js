@@ -1,9 +1,11 @@
 const amqp = require('amqplib');
 const QUEUE_NAME = 'notification_queue';
-
+require('dotenv').config();
+const RABBITMQ_URL = process.env.RABBITMQ_URL;
 const publishToQueue = async (payload) => {
     try {
-        const connection = await amqp.connect('amqp://localhost');
+        const connection = await amqp.connect(process.env.RABBITMQ_URL);
+
         const channel = await connection.createChannel();
         await channel.assertQueue(QUEUE_NAME);
 

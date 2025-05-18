@@ -1,10 +1,13 @@
 const amqp = require('amqplib');
+require('dotenv').config({ path: __dirname + '/../.env' });
+
 
 const QUEUE = 'notification_queue';
-
+const RABBITMQ_URL = process.env.RABBITMQ_URL;
 const consumeQueue = async () => {
     try {
-        const conn = await amqp.connect('amqp://localhost');
+        const conn = await amqp.connect(process.env.RABBITMQ_URL);
+
         const channel = await conn.createChannel();
         await channel.assertQueue(QUEUE);
         console.log('Waiting for notifications in queue...');
