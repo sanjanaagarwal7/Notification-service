@@ -1,52 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Notification Service - Documentation</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      line-height: 1.6;
-      color: #333;
-      padding: 0 20px;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    code {
-      background: #f4f4f4;
-      padding: 2px 6px;
-      border-radius: 3px;
-      font-family: monospace;
-    }
-    pre {
-      background: #f4f4f4;
-      padding: 15px;
-      border-radius: 5px;
-      overflow-x: auto;
-    }
-    a {
-      color: #2980b9;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul {
-      margin-left: 20px;
-    }
-    .note {
-      background: #fcf8e3;
-      padding: 10px;
-      border-left: 4px solid #f0ad4e;
-      margin: 20px 0;
-    }
-  </style>
-</head>
-<body>
+
+
   <h1>Notification Service</h1>
 
   <h2>Objective</h2>
@@ -78,7 +31,7 @@
   <h2>Setup Instructions</h2>
 
   <h3>1. Clone the repository</h3>
-  <pre><code>git clone https://github.com/yourusername/notification-service.git
+  <pre><code>git clone https://github.com/sanjanaagarwal7/notification-service.git
 cd notification-service
   </code></pre>
 
@@ -98,7 +51,7 @@ cd notification-service
 
   <h3>4. Configure Environment Variables</h3>
   <p>Create a <code>.env</code> file in the project root with the following content:</p>
-  <pre><code>RABBITMQ_URL=amqp://localhost
+  <pre><code>RABBITMQ_URL=amqp://guest:guest@localhost:5672/
 PORT=3000
   </code></pre>
   <p><code>RABBITMQ_URL</code> points to the RabbitMQ instance (default assumes Docker localhost). <code>PORT</code> is the port your Express API server will listen on.</p>
@@ -122,7 +75,7 @@ Content-Type: application/json
 
 {
   "user": "user-id-123",
-  "type": "email",        // "email" | "sms" | "in-app"
+  "type": "Email",        // "Email" | "SMS" | "in-app"
   "message": "Your notification message here"
 }
   </code></pre>
@@ -138,8 +91,8 @@ Content-Type: application/json
   <h2>Assumptions</h2>
   <ul>
     <li>The project uses RabbitMQ for queueing notifications.</li>
-    <li>RabbitMQ is accessible at <code>amqp://localhost</code> (adjust <code>RABBITMQ_URL</code> in <code>.env</code> if different).</li>
-    <li>Notification sending (email, SMS) logic can be implemented or mocked inside the worker.</li>
+    <li>RabbitMQ is accessible at <code>amqp://guest:guest@localhost:5672/</code>.</li>
+    <li>Notification sending (Email, SMS) logic can be implemented or mocked inside the worker.</li>
     <li>The project currently logs notifications; integration with real email/SMS providers is out of scope.</li>
   </ul>
 
@@ -149,11 +102,12 @@ Content-Type: application/json
     <li><a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a></li>
     <li><a href="https://www.docker.com/get-started" target="_blank" rel="noopener noreferrer">Docker</a></li>
   </ul>
+  
 
-  <h2>Contact</h2>
-  <p>For any issues or questions, please contact <strong>Your Name</strong> at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
 
-  <hr />
-  <p style="text-align:center;">Enjoy using the Notification Service! 🚀</p>
-</body>
-</html>
+<br>
+![Screenshot 2025-05-19 025354](https://github.com/user-attachments/assets/9c51c010-ccb3-46b9-94b5-6c4f3c0da96e)<br>
+![Screenshot 2025-05-19 025433](https://github.com/user-attachments/assets/af1c61a3-395f-4ebe-ad74-70dcaaeccfc0)<br>
+![Screenshot 2025-05-19 025458](https://github.com/user-attachments/assets/50d5213a-b5ac-4239-9fb4-69c818304182)
+
+
